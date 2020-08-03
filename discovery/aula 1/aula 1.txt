@@ -1,0 +1,26 @@
+- link do notion 
+https://www.notion.so/Front-end-ab15ef64dbe7459aba38364cf60af9d2
+
+-  cltr + shift + R -> hard reload
+
+- extensão liveserver -> ao salvar atualiza a página
+- alt + z -> adapta código no tamanho de tela aberta
+- duplicar linha -> colocar cursor na linha dar ctrl + c e ctrl + v
+- atalhos do teclado -> ctrl + p - "Shortcuts"
+
+- CSS
+
+- :root -> elemento principal do documento
+- --color-primary-dark: #774dd6; -> cria variáveis
+- var(--color-primary-dark); -> pega valor da variável
+
+- tamanho da fonte padrão 16px - 100% - 1rem
+- font-size: 60%; /* controle das medidas rem */
+
+- todos os elementos vão receber box model (tudo como um box / caixa)
+- box-sizing: content-box -> padding + largura e vai expandir a caixa
+- box-sizing: border-box -> largura define o tamanho da caixa toda
+
+- display flex
+
+- vh -> viewport height / altura do tamanho da area visivel
