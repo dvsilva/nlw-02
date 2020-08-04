@@ -1,0 +1,53 @@
+- whimscal -> site online para mindmaps e wireframes
+
+- backend
+noblocking io -> node possui controle sobre assincronismo (varias tarefas sem bloquear execução)
+- stream -> consumir dados aos poucos
+- workersflat -> permite trabalhar com cores da CPU do processador para fazer ações diferentes no node
+
+- criar projeto node dentro da pasta server
+yarn init -y
+
+- adicionar typescript
+yarn add typescript -D
+
+- criar arquivo de configuração do typescript
+yarn tsc --init
+- modificar arquivo tsconfig.json
+"target": "es2017"
+
+- adicionar dependencia de desenvolvimento (executar server e automatizar atualizações)
+yarn add ts-node-dev -D
+
+- criar script no package.json 
+"scripts": {
+ "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+  "start": "ts-node-dev src/server.ts"
+},
+
+--transpile-only -> converter arquivos e nao verificar erros
+--ignore-watch node_modules -> ignorar pasta node_modules
+--respawn -> reeniciar a cada modificação
+
+- adicionar express
+yarn add express
+- adicionar tipagem do express para parar com erros
+yarn add @types/express -D
+
+- adicionar biblioteca knex (queries) e sqlite
+yarn add knex sqlite3
+
+- criar arquivo knexfile.ts na raiz
+
+- executar migration
+yarn knex:migrate
+
+- criar script no package.json
+"scripts": {
+  "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
+  "knex:migrate:rollback": "knex --knexfile knexfile.ts migrate:rollback"
+}
+
+- adicionar cors
+yarn add cors
+yarn add @types/cors

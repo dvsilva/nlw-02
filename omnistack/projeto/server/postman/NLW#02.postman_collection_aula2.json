@@ -1,0 +1,125 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NLW#02",
+		"_postman_id": "d7645d33-3559-ec7c-fee3-66b4efa64c80",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classes",
+			"description": "",
+			"item": [
+				{
+					"name": "Create class",
+					"request": {
+						"url": "http://localhost:3333/classes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Danyllo\",\n    \"avatar\": \"https://avatars1.githubusercontent.com/u/15819565?s=460&u=d824e8cb634c7e75c90843c78275c1d95198dbd8&v=4\",\n    \"whatsapp\": \"+55 21 980418614\",\n    \"bio\": \"Mussum Ipsum, cacilds vidis litro abertis. Viva Forevis aptent taciti sociosqu ad litora torquent. Quem manda na minha terra sou euzis! Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interessantiss quisso pudia ce receita de bolis, mais bolis  eu num gostis.\",\n    \"subject\": \"Matemática\",\n    \"cost\": 80,\n    \"schedule\": [\n    \t{\"week_day\": 1, \"from\": \"8:00\", \"to\": \"12:00\"},\n    \t{\"week_day\": 3, \"from\": \"10:00\", \"to\": \"18:00\"},\n    \t{\"week_day\": 4, \"from\": \"8:00\", \"to\": \"12:00\"}\n    ]\n}\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List classes",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3333/classes?week_day=1&subject=Matemática&time=11:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"classes"
+							],
+							"query": [
+								{
+									"key": "week_day",
+									"value": "1",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "subject",
+									"value": "Matemática",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "time",
+									"value": "11:00",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Connections",
+			"description": "",
+			"item": [
+				{
+					"name": "Create connections",
+					"request": {
+						"url": "http://localhost:3333/connections",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user_id\": 1}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List connections",
+					"request": {
+						"url": "http://localhost:3333/connections",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"user_id\": 1}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
