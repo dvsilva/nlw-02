@@ -1,0 +1,21 @@
+- ctrl + shift + ' -> abrir o terminal
+- "Select Default Shell" > "Git Bash" -> abre a bash do git detro do VSCode
+
+- criar projeto
+npm init -y
+
+- adicionar dependências
+npm install express
+
+- iniciar servidor
+node src/server.js
+
+- adicionar biblioteca para fazer hotreload em desenv
+npm install nodemon -D
+
+- executar com nodemon
+npm run dev
+
+- template engine -> motor que usa programação para fazer e renderizar o html
+- adicionar dependencia
+npm install nunjucks

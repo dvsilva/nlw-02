@@ -1,0 +1,44 @@
+- Responsabilidades
+    - Receber pedidos do cliente
+    - Preparar os pedidos ( Regras de Negócio )
+    - Enviar respostas
+    - Lidar com dados da aplicação
+- Tecnologias
+    - Linguagem: **[Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript)**
+    - Node.js ([https://nodejs.org](https://nodejs.org/en/))
+    - Git Bash ([https://gitforwindows.org](https://gitforwindows.org/))
+    - [Banco de dados](https://www.notion.so/nextlevelweekstarter/Banco-de-Dados-5486eedc84d245a289d6004d34597f22): [SQL](https://en.wikipedia.org/wiki/SQL)
+    - SQLite
+
+## 🏄🏽‍♂️ Bora Codar!
+
+- [ ]  Estrutura de pastas do projeto
+- [ ]  Criação do servidor
+    - [ ]  Instalação dos módulos
+    - Configuração do servidor
+        - [ ]  Criar e iniciar
+        - [ ]  Página inicial
+        - [ ]  Arquivos estáticos
+    - Rotas da aplicação
+        - [ ]  Requisição e Resposta
+        - [ ]  O que são verbos HTTP
+        - [ ]  GET e POST
+        - [ ]  Tipos de envio de dados
+            - [ ]  Query Strings / Body
+            - [ ]  Habilitar o express para utilizar o `req.body`
+    - Template Engine
+        - [ ]  Instalar e configurar `nunjucks`
+        - [ ]  Renderizar
+        - [ ]  Enviar dados para o html
+        - [ ]  Usando Nunjucks
+            - [ ]  include
+            - [ ]  variables
+            - [ ]  extends
+            - [ ]  block
+            - [ ]  if
+            - [ ]  for
+        - [ ]  Instalar extensão `nunjucks-template` nas extensões VSCode
+    - Dados
+        - [ ]  Enviando dados
+        - [ ]  Recebendo dados
+        - [ ]  Persistindo ( guardando ) banco de dados

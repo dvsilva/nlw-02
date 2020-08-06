@@ -1,0 +1,37 @@
+- instalar o expo global
+link: https://www.notion.so/Instala-o-3d8bc65b8a0f48249bf3037156eb0a15#1d324cbdc1d349eaa522944eb9c8d3c2
+
+Para instalar o Expo é bem simples e o passo é o mesmo nos 3 sistemas operacionais. 
+Com o Node e Yarn instalados, abra o terminal (no Windows, sem ser como admin) e execute:
+yarn global add expo-cli
+Caso você prefira utilizar o npm, basta executar:
+npm install expo-cli --global
+
+Para verificar se a instalação ocorreu com sucesso, execute:
+expo --version
+Se retornar a versão da cli do Expo, a instalação ocorreu com sucesso.
+
+Caso o comando resulte no erro `expo : 
+O arquivo C:\Users\xxxx\AppData\Roaming\npm\expo.ps1 não pode ser carregado`, 
+verifique se o **ExecutionPolicy** está configurado como `RemoteSigned`.
+
+Caso a instalação da expo-cli como global no Yarn apareça que ocorreu 
+com sucesso mas ao tentar utilizar o expo diz que o comando não existe, 
+verifique no Linux e no macOS se você adicionou a linha 
+`export PATH="$PATH:`yarn global bin`"` 
+ao arquivo de configuração do seu terminal.
+
+- criar projeto mobile
+expo init mobile
+blank (TypeScript)
+
+instalar expo client no smartphone
+
+- adicionar expor google fontes
+expo install expo-font @expo-google-fonts/archivo @expo-google-fonts/poppins
+
+- instalar react-navigation
+yarn add @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add @react-navigation/stack
+yarn add @react-navigation/bottom-tabs
