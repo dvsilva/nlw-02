@@ -1,0 +1,18 @@
+- javascript
+
+- script tem que colocar por ultimo pois pode não carregar ao abrir a pagina
+
+- abrir outra página
+document.location.href = "google.com"
+
+- obter div container
+document.querySelector("#container")
+
+- mudar propriedade
+document.querySelector("#container").style.width = "500"
+
+- mudar cor de fundo
+document.querySelector("#container").style.backgroundColor = "red"
+
+- defer -> carregarmento após renderização da pagina
+<script src="scripts/main.js" defer></script>

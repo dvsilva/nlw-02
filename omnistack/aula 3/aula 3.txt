@@ -1,0 +1,8 @@
+atalhos VSCode
+ctrl + shift + L -> selecionar todas as palavras iguais do arquivo
+
+declarative
+interface é montada a partir das informações dadas a ela
+
+adicionar biblioteca para acessar backend
+yarn add axios
