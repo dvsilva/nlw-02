@@ -1,0 +1,2 @@
+- instalar sqlite
+npm install sqlite-async

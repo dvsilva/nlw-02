@@ -1,0 +1,7 @@
+- expo picker (bilbioteca para component select/combobox)
+
+- adicionar bilbioteca para conectar a API
+yarn add axios
+
+- adicionar async-storage para armazenar favoritos
+expo install @react-native-community/async-storage

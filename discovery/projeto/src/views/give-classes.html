@@ -31,7 +31,7 @@
         </div>
       </header>
       <main>
-        <form action="" id="create-class">
+        <form action="/save-classes" id="create-class" method="POST">
           <fieldset>
             <legend>Seus dados</legend>
             <div class="input-block">
@@ -91,8 +91,8 @@
 
             <div class="schedule-item">
               <div class="select-block">
-                <label for="week_day">Dia da semana</label>
-                <select name="weekday[]" id="week_day">
+                <label for="weekday">Dia da semana</label>
+                <select name="weekday[]" id="weekday">
                   <option value="" disabled="" hidden=""
                     >Selecione uma opção</option
                   >
@@ -106,12 +106,12 @@
 
               <div class="input-block">
                 <label for="time_from">Das</label>
-                <input name="from" id="time_from[]" type="time" required />
+                <input name="time_from[]" id="time_from" type="time" required />
               </div>
 
               <div class="input-block">
                 <label for="time_to">Das</label>
-                <input name="to" id="time_to[]" type="time" required />
+                <input name="time_to[]" id="time_to" type="time" required />
               </div>
             </div>
           </fieldset>
